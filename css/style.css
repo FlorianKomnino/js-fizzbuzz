@@ -1,3 +1,19 @@
-h1 {
-    color: red;
+
+/* General selectors */
+.custom-align-center {
+    align-items: center;
+}
+
+.custom-bg-green {
+    background-color: #36f770;
+}
+
+.custom-text-magenta {
+    background-color: #db1287;
+}
+
+/* Main selectors */
+div.col-12>* {
+    margin: 1rem 1rem 0 1rem;
+    width: calc((100% / 5) - 2rem);
 }
