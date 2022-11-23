@@ -39,14 +39,32 @@ for (let i = 1; i < 101; i++) {
     } 
     //ALTRIMENTI SECONDO CASO : se il numero in questione è divisibile solo per 3 faccio stampare solo Fizz invece del numero
     else if (i % 3 == 0) {
-
+        workingSpace.innerHTML += `
+        <div class="d-flex justify-content-center custom-align-center custom-bg-green">
+            <div class="custom-text-magenta text-center fs-3">
+                Fizz
+            </div>
+        </div>
+        `;
     } 
     //ALTRIMENTI TERZO CASO : se il numero in questione è divisibile solo per 5 faccio stampare solo Buzz invece del numero
     else if (i % 5 == 0) {
-
+        workingSpace.innerHTML += `
+        <div class="d-flex justify-content-center custom-align-center custom-bg-green">
+            <div class="custom-text-magenta text-center fs-3">
+                Buzz
+            </div>
+        </div>
+        `;
     } 
     //ALTRIMENTI RESIDUALE : in tutti gli altri casi faccio stampare solo il numero stesso
     else {
-
+        workingSpace.innerHTML += `
+        <div class="d-flex justify-content-center custom-align-center custom-bg-green">
+            <div class="custom-text-magenta text-center fs-3">
+                ${i}
+            </div>
+        </div>
+        `;
     }
 }
