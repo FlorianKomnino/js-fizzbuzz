@@ -30,7 +30,7 @@ for (let i = 1; i < 101; i++) {
     //SE PRIMO CASO : se il numero in questione è divisibile sia per 3 che per 5 faccio stampare FizzBuzz invece del numero
     if ((i % 3 == 0) && (i % 5 == 0)) {
         workingSpace.innerHTML += `
-        <div class="d-flex justify-content-center custom-align-center custom-bg-green">
+        <div class="d-flex justify-content-center custom-align-center custom-bg-orange">
             <div class="custom-text-magenta text-center fs-3">
                 FizzBuzz
             </div>
@@ -41,7 +41,7 @@ for (let i = 1; i < 101; i++) {
     else if (i % 3 == 0) {
         workingSpace.innerHTML += `
         <div class="d-flex justify-content-center custom-align-center custom-bg-green">
-            <div class="custom-text-magenta text-center fs-3">
+            <div class="text-white text-center fs-3">
                 Fizz
             </div>
         </div>
@@ -50,7 +50,7 @@ for (let i = 1; i < 101; i++) {
     //ALTRIMENTI TERZO CASO : se il numero in questione è divisibile solo per 5 faccio stampare solo Buzz invece del numero
     else if (i % 5 == 0) {
         workingSpace.innerHTML += `
-        <div class="d-flex justify-content-center custom-align-center custom-bg-green">
+        <div class="d-flex justify-content-center custom-align-center custom-bg-cyan">
             <div class="custom-text-magenta text-center fs-3">
                 Buzz
             </div>
