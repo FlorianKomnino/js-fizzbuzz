@@ -5,15 +5,15 @@ console.log('Hello World!');
 for (let i = 1; i < 101; i++) {
     //aggiungo un condizionale per stampare cose differenti in casi divvefferenti
     //SE PRIMO CASO : se il numero in questione è divisibile sia per 3 che per 5 faccio stampare FizzBuzz invece del numero
-    if ((i % 3 == 0) && (i % 5 == 0)) {
+    if ((i % 3 === 0) && (i % 5 === 0)) {
         console.log('FizzBuzz')
     } 
     //ALTRIMENTI SECONDO CASO : se il numero in questione è divisibile solo per 3 faccio stampare solo Fizz invece del numero
-    else if (i % 3 == 0) {
+    else if (i % 3 === 0) {
         console.log('Fizz')
     } 
     //ALTRIMENTI TERZO CASO : se il numero in questione è divisibile solo per 5 faccio stampare solo Buzz invece del numero
-    else if (i % 5 == 0) {
+    else if (i % 5 === 0) {
         console.log('Buzz')
     } 
     //ALTRIMENTI RESIDUALE : in tutti gli altri casi faccio stampare solo il numero stesso
@@ -28,7 +28,7 @@ const workingSpace = document.getElementById('workingSpace')
 for (let i = 1; i < 101; i++) {
     //aggiungo un condizionale per stampare cose differenti in casi divvefferenti
     //SE PRIMO CASO : se il numero in questione è divisibile sia per 3 che per 5 faccio stampare FizzBuzz invece del numero
-    if ((i % 3 == 0) && (i % 5 == 0)) {
+    if ((i % 3 === 0) && (i % 5 === 0)) {
         workingSpace.innerHTML += `
         <div class="d-flex justify-content-center custom-align-center custom-bg-orange">
             <div class="custom-text-magenta text-center fs-3">
@@ -38,7 +38,7 @@ for (let i = 1; i < 101; i++) {
         `;
     } 
     //ALTRIMENTI SECONDO CASO : se il numero in questione è divisibile solo per 3 faccio stampare solo Fizz invece del numero
-    else if (i % 3 == 0) {
+    else if (i % 3 === 0) {
         workingSpace.innerHTML += `
         <div class="d-flex justify-content-center custom-align-center custom-bg-green">
             <div class="text-white text-center fs-3">
@@ -48,7 +48,7 @@ for (let i = 1; i < 101; i++) {
         `;
     } 
     //ALTRIMENTI TERZO CASO : se il numero in questione è divisibile solo per 5 faccio stampare solo Buzz invece del numero
-    else if (i % 5 == 0) {
+    else if (i % 5 === 0) {
         workingSpace.innerHTML += `
         <div class="d-flex justify-content-center custom-align-center custom-bg-cyan">
             <div class="custom-text-magenta text-center fs-3">
